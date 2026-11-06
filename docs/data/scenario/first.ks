@@ -1,46 +1,56 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="陶芸家"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「私は新進気鋭の陶芸家。今日も頑張って作品を作るぞ！」[l][r]
 
-メロスは激怒した。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
 
-(中略)[l][r]
+今日は何を作ろうかな。[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_tubo] →壺 [endlink][r]
+[link target=*tag_wan] →茶碗 [endlink][r]
+[link target=*tag_yunomi] →湯飲み [endlink][r]
 [s]
 
-*tag_sleep
+*tag_tubo
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
 
-【 BAD END 】[l][cm]
+芸術的な作品を作れた！もっとたくさん作ろう。[l][r]
+数日後[l][r]
+土を使いすぎて借金してしまった。友人に相談しよう...[l][r]
+（友人とカフェにて）[l][r]
+この壺、持ってると幸せになるんだ！絶対だよ！[r]
+
+
+【 BAD END（詐欺商法） 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_wan
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+手にフィットして持ちやすいな。いっぱい作ろう。[l][r]
+（数日後、フリマにて）[l][r]
+ご年配の方を中心に大人気！作ってよかったな。[l][r]
+【 GOOD END （茶碗）】[l][cm]
+[jump target=*start]
 
-【 GOOD END 】[l][cm]
+*tag_yunomi
+
+
+
+[cm]
+落ち着いてお茶が飲めそうだ。[l][r]
+（数日後、個展にて）[l][r]
+資産家に評価され、100万円で買い取ってもらった！[l][r]
+
+【 GOOD END（湯飲み） 】[l][cm]
 
 [jump target=*start]
